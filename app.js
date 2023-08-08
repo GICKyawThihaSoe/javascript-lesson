@@ -4,9 +4,6 @@
 // for , while , dowhile
 // for in , foreach
 
-let i = 0;
-
-while (i < 3){
-    console.log("Now i is " + i);
-    i++;
+for (let i = 0; i < 5; i++){
+    console.log("Hello world" + i)
 }
