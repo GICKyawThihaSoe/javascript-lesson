@@ -1,23 +1,41 @@
-// Control Flow
-// if , if else, if - else if - else
-// switch
-// for , while , dowhile
-// for in , foreach
+let users = [
+    {
+        name: "Mg Mg",
+        age: 20,
+        school: "ygn",
+    },
+    {
+        name: "Kyaw Kyaw",
+        age: 21,
+        school: "Mdy",
+    },
+    {
+        name: "Bo Bo",
+        age: 22,
+        school: "yeu",
+    },
+    {
+        name: "Tun Tun",
+        age: 23,
+        school: "shwebo",
+    },
+    {
+        name: "Su Su",
+        age: 24,
+        school: "japan",
+    },
+]
 
-// when start and end point are already know "For Loop"
-// when end point is not sure "While Loop"
-// when at least one time work "Do While"
+users.forEach((user)=>{
+    console.log(user.name);
+})
+console.log("*******");
 
-let dd = ["One","Two","Three","Four","Five"];
-let obj = {
-    name: "Mg Mg",
-    age: 20,
-    family: 5,
-    car: "Toyota"
-}
+users.map((user)=>{
+    console.log(user.name);
+})
 
-console.log(obj["car"]);
+console.log("*******");
 
-for(x in dd){
-    console.log(dd[x])
-}
+let ind = users.findIndex(user=>user.age == 23);
+console.log(users[ind]);
