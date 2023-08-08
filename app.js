@@ -4,16 +4,21 @@
 // for , while , dowhile
 // for in , foreach
 
-let age = 20;
+let color = "red";
 
-if(age == 6){
-    console.log("Age is 6");
-}else if(age == 13){
-    console.log("Age is 13");
-}else if(age == 14){
-    console.log("Age is 14");
-}else if(age == 19){
-    console.log("Age is 19");
-}else {
-    console.log("I am tired");
+switch(color){
+    case "green":
+        console.log("It is green");
+        break;
+    case "blue":
+        console.log("It is blue");
+        break;
+    case "yellow":
+        console.log("It is yellow");
+        break;
+    case "red":
+        console.log("It is red");
+        break;
+    default:
+        console.log("I can't guess!");
 }
