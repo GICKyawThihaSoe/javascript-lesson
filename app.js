@@ -6,7 +6,7 @@
 
 let i = 0;
 
-while (i < 3){
-    console.log("Now i is " + i);
+do{
+    console.log("Hey Now " + i);
     i++;
-}
+}while(i <= 100);
