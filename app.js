@@ -4,8 +4,16 @@
 // for , while , dowhile
 // for in , foreach
 
-if(40 > 50){
-    console.log("Bigger");
+let age = 20;
+
+if(age == 6){
+    console.log("Age is 6");
+}else if(age == 13){
+    console.log("Age is 13");
+}else if(age == 14){
+    console.log("Age is 14");
+}else if(age == 19){
+    console.log("Age is 19");
 }else {
-    console.log("Smaller");
+    console.log("I am tired");
 }
