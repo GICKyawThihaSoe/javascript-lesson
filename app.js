@@ -1,14 +1,8 @@
-let scripts = document.scripts;
-let scriptsArray = Array.from(scripts);
-scriptsArray.forEach((scripts)=>{
-    console.log(scripts.src);
-})
-
-let btn = document.querySelector(".btn");
-btn.onclick = () =>{
-    alert(123);
-}
-let btn2 = document.querySelector("#btn");
-btn2.onclick = ()=>{
-    alert(456);
+let list = document.querySelector(".lis");
+for(let i = 0; i < list.childNodes.length; i++){
+    let node = list.childNodes[i];
+    if(node.nodeType == 1){
+        console.log(node.childNodes[0].textContent);
+        console.log(list.childElementCount);
+    }
 }
