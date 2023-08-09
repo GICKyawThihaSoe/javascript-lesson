@@ -1,59 +1,25 @@
-let a = [1,2,3,4,5];
-console.log(a.length);
-console.log(a.toString());
+let now = new Date();
+console.log(now);
+console.log(now.getDay());
+console.log(now.getMonth() + 1);
+console.log(now.getDate());
+console.log(now.getFullYear());
+console.log(now.getHours());
+console.log(now.getMinutes());
+console.log(now.getSeconds());
+console.log(now.getMilliseconds());
+console.log(now.getTime());
 /*****/
-let b = [1,2,3,4,5];
-let bol = Array.isArray(b);
-let bb = "String";
-let bol2 = Array.isArray(bb);
-console.log(bol);
-console.log(bol2);
+let dd = new Date();
+let ddc = dd.toString();
+console.log(typeof ddc);
 /*****/
-let ab = [1,2,3,4,5,6,7,8];
-console.log(ab[2]);
-ab[2] = 200;
-console.log(ab[2]);
-/*****/
-let bc = [1,2,3,4,5,6,7,8];
-let ind = bc.indexOf(5);
-console.log(ind);
-/*****/
-let dd = [1,2,3,4,5,6,7,8];
-console.log(dd);
-dd.push(300);
-console.log(dd);
-/*****/
-let ad = [1,2,3,4,5,6,7,8];
-console.log(ad);
-ad.unshift(300);
-console.log(ad);
-/*****/
-let da = [1,2,3,4,5,6,7,8];
-console.log(da);
-da.pop(8);
+let da = new Date("02/24/2003");
 console.log(da);
 /*****/
-let dad = [8,1,2,3,4,5,6,7,8];
-console.log(dad);
-dad.shift(8);
-console.log(dad);
+let dab = new Date("February 24 2003 10:33:22");
+console.log(dab);
 /*****/
-let abc = [1,2,3,4,5,6,7,8];
-console.log(abc);
-abc.splice(2,1);
-console.log(abc);
-/*****/
-let abc1 = [1,2,3,4,5,6,7,8];
-console.log(abc1);
-abc1.splice(2,3);
-console.log(abc1);
-/*****/
-let arv = [1,2,3,4,5,6,7,8];
-console.log(arv);
-arv.reverse();
-console.log(arv);
-/*****/
-let avv = [1,2,3,4,5,6,7,8];
-let avv2 = [1,2,3,4,5,6,7,8];
-let combine = avv.concat(avv2);
-console.log(combine);
+let aa = new Date("February 24 2003 10:33:22");
+aa.setDate(11);
+console.log(aa);
