@@ -1,8 +1,8 @@
-let list = document.querySelector(".lis");
-let text = document.createTextNode("Six");
-let aTag = document.createElement("a");
-aTag.setAttribute("href","#");
-aTag.appendChild(text);
-let li = document.createElement("li");
-li.appendChild(aTag);
-list.appendChild(li);
+let oldH1 = document.querySelector("#head");
+let text = document.createTextNode("New Header");
+let newH1 = document.createElement("h1");
+newH1.appendChild(text);
+newH1.className = "biber";
+newH1.id = "bib";
+let body = oldH1.parentNode;
+body.replaceChild(newH1,oldH1);
