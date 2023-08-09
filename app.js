@@ -1,8 +1,6 @@
-let str = "I found a little one in the forest alone";
-str += "He He";
-console.log(str);
-/*****/
-let str2 = "On November 10\"th, I found you";
-let ss = "He He";
-str2 = str2.concat('-',ss);
-console.log(str2);
+let name = prompt("What is your name?");
+document.querySelector("#head").innerHTML = name;
+
+let con = confirm("is your age over 18");
+let answer = con ? "Yes over 18" : "No under 18";
+document.querySelector(".para").innerHTML = answer;
