@@ -1,19 +1,47 @@
-let person = {
-    name: "Kyaw Kyaw",
-    borther: "Aung Aung",
-    sister: "Su Su",
-    parents: ["U Mya","Daw Nu"],
-    age: 20
+// fuction default value
+function doIt(name = 'Mg Mg'){
+    console.log(name);
 }
+doIt();
+/******/
 
-let kyawkyawdata = `
-<h5>${person.name} Resume</h5>
-<ul>
-    <li>Father : ${person.parents[0]}</li>
-    <li>Mother : ${person.parents[1]}</li>
-    <li>Brother : ${person.borther}</li>
-    <li>Sister : ${person.sister}</li>
-    <li>Age : ${person.age}</li>
-</ul>
-`
-document.querySelector('.para').innerHTML = kyawkyawdata;
+// fuction default value
+function doIt2(name = 'Mg Mg'){
+    console.log(name);
+}
+doIt2('Kyaw Kyaw'); 
+/******/
+
+// function expression  
+let dd = function(){
+    console.log("I am Kyaw Kyaw");
+}
+dd();
+/******/
+
+// function expression with arrow function
+let aa = () =>{
+    console.log("I am Bo Bo");
+}
+aa();   
+/******/
+
+// Immidaiately Invokable Function Expression (IIFEs)
+(function (){
+    console.log("Hey Now");
+})();
+/******/
+
+// Immidaiately Invokable Function Expression (IIFEs) with arrow function
+(()=>console.log("hello world"))();
+/******/
+
+// Function Inside Object
+let obj = {
+    name: "Mg Mg",
+    age: 20,
+    dd: function(){
+        console.log("I am a function inside a object!");
+    }
+}
+obj.dd();
