@@ -1,15 +1,34 @@
-let num = 2.4;
+let num = 20;
 
-console.log(Math.round(num));
-console.log(Math.ceil(num));
-console.log(Math.floor(num));
-console.log(Math.sqrt(num));
-console.log(Math.abs(num));
-console.log(Math.pow(8,2));
-console.log(Math.min(3,5));
-console.log(Math.max(3,5));
+console.log(num);
+console.log(typeof num);
 
-for(let i = 0; i < 10; i++){
-    let num = Math.ceil((Math.random() * 6) + 0);
-    console.log(num);
-}
+let str = num.toString();
+
+console.log(str);
+console.log(typeof str);
+console.log("********");
+let string = "30";
+let number = Number(string);
+console.log(number);
+console.log(typeof number);
+console.log("********");
+let nan = "20hello";
+let NaNmuber = Number(nan);
+console.log(NaNmuber);
+console.log(typeof NaNmuber)
+console.log("********");
+let a = "20";
+let b = parseInt(a);
+console.log(b);
+console.log(typeof b);
+console.log("********");
+let c = "20.212213";
+let d = parseFloat(c);
+console.log(d);
+console.log(typeof d);
+console.log("********");
+let ab = "20.212213";
+let cd = Number(ab).toFixed(2);
+console.log(cd);
+console.log(typeof cd);
