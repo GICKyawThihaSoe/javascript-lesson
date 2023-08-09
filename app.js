@@ -1,26 +1,19 @@
-function doIt(){
-  let x = 10;
-  let y = 20;
-  let z = x + y;
-
-  console.log(z);
+let person = {
+    name: "Kyaw Kyaw",
+    borther: "Aung Aung",
+    sister: "Su Su",
+    parents: ["U Mya","Daw Nu"],
+    age: 20
 }
 
-doIt();
-
-function dod(){
-    return 20;
-}
-
-let total = dod() + 20;
-console.log(total);
-console.log("******");
-function test(name){
-    return "Mr." + name;
-}
-console.log(test("Mg Mg"));
-console.log("******");
-function oktt(name,age){
-    return "Name is " + name + " And " + "Age is " + age;
-}
-console.log(oktt("Aung Aung",20));
+let kyawkyawdata = `
+<h5>${person.name} Resume</h5>
+<ul>
+    <li>Father : ${person.parents[0]}</li>
+    <li>Mother : ${person.parents[1]}</li>
+    <li>Brother : ${person.borther}</li>
+    <li>Sister : ${person.sister}</li>
+    <li>Age : ${person.age}</li>
+</ul>
+`
+document.querySelector('.para').innerHTML = kyawkyawdata;
