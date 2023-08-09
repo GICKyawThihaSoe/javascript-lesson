@@ -1,30 +1,23 @@
-let numbers = [12,43,55,1,6,9,2,5];
-numbers.sort();
-console.log(numbers);
-/*******/
-let numbers2 = [12,43,55,1,6,9,2,5];
-function filter(x,y){
-    return x - y;
+var num = 20; // global
+let count = 10; // block
+console.log(window.num);
+console.log(window.count);
+/******/
+for (let i = 0; i < 10; i++) {
+  console.log(i);
 }
-numbers2.sort(filter);
-console.log(numbers2);
-/*******/
-let numbers3 = [12,43,55,1,6,9,2,5];
-function filter2(x,y){
-    return y - x;
+/******/
+for (var a = 0; a < 10; a++) {
+  console.log(a);
 }
-numbers3.sort(filter2);
-console.log(numbers3);
-/*******/
-let num = [12,43,55,1,6,9,2,5];
-num.sort((x,y)=> x - y);
-console.log(num);
-/*******/
-let num2 = [12,43,55,6,9,2,5];
-let result = num2.find(x => x < 12);
-console.log(result);
-/*******/
-let ac = [12,43,55,6,9,2,5];
-let ary = new Array(123,444,222);
-let resultto = ac.concat(ary);
-console.log(resultto);
+console.log(a);
+/******/
+(doIt = () =>{
+    let count = 400;
+    var nudd = 600;
+    console.log(count);
+    console.log(nudd);
+})()
+/******/
+var ab = 20; // global, redeclearable
+let cc = 30; // block
