@@ -1,23 +1,8 @@
-var num = 20; // global
-let count = 10; // block
-console.log(window.num);
-console.log(window.count);
-/******/
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-}
-/******/
-for (var a = 0; a < 10; a++) {
-  console.log(a);
-}
-console.log(a);
-/******/
-(doIt = () =>{
-    let count = 400;
-    var nudd = 600;
-    console.log(count);
-    console.log(nudd);
-})()
-/******/
-var ab = 20; // global, redeclearable
-let cc = 30; // block
+let str = "I found a little one in the forest alone";
+str += "He He";
+console.log(str);
+/*****/
+let str2 = "On November 10\"th, I found you";
+let ss = "He He";
+str2 = str2.concat('-',ss);
+console.log(str2);
