@@ -1,41 +1,18 @@
-let users = [
-    {
-        name: "Mg Mg",
-        age: 20,
-        school: "ygn",
-    },
-    {
-        name: "Kyaw Kyaw",
-        age: 21,
-        school: "Mdy",
-    },
-    {
-        name: "Bo Bo",
-        age: 22,
-        school: "yeu",
-    },
-    {
-        name: "Tun Tun",
-        age: 23,
-        school: "shwebo",
-    },
-    {
-        name: "Su Su",
-        age: 24,
-        school: "japan",
-    },
-]
+// Premitive Type
+let name = "Mg Mg"; // String
+let age = 20; // Number
+let con = false; // Boolean
+let data = null; // Object
+let dd; // undefined
+let sym = Symbol(); // symbol
 
-users.forEach((user)=>{
-    console.log(user.name);
-})
-console.log("*******");
+// Refrence Type
+let arry = ["one","two","three","four","five"];
+let person = {
+    name: "Mg Mg",
+    age: 20,
+}
+let audio = new Audio();
+let date = new Date();
 
-users.map((user)=>{
-    console.log(user.name);
-})
-
-console.log("*******");
-
-let ind = users.findIndex(user=>user.age == 23);
-console.log(users[ind]);
+console.log(date);
